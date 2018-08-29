@@ -10,14 +10,14 @@ if [ ! -d $PATH_PIKA ]; then
 fi
 
 if [ -d $PATH_PIKA_CUSTOM ]; then
-  if [ -L $PATH_PIKA_CUSTOM]; then
+  if [ -L $PATH_PIKA_CUSTOM ]; then
     rm $PATH_PIKA_CUSTOM
   else
-    rmdir $PATH_PIKA_CUSTOM
+    rm -rf $PATH_PIKA_CUSTOM
   fi
 fi
 
 mkdir $PATH_PIKA_CUSTOM
-ln -sr $HOME/dotfiles/vim/custom/plugin.vim $PATH_PIKA_CUSTOM/plugin.vim
+ln -sr -f $HOME/dotfiles/vim/custom/plugin.vim $PATH_PIKA_CUSTOM/plugin.vim
 vim +PlugInstall +qall
-ln -sr $HOME/dotfiles/vim/custom/local.vim $PATH_PIKA_CUSTOM/local.vim
+ln -sr -f $HOME/dotfiles/vim/custom/local.vim $PATH_PIKA_CUSTOM/local.vim
