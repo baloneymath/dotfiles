@@ -66,7 +66,7 @@ ZSH_THEME="yoda"
 plugins=(
   git git-flow
   zsh-completions zsh-autosuggestions zsh-syntax-highlighting
-  tmux vi-mode
+  tmux
 )
 autoload -U compinit && compinit
 
