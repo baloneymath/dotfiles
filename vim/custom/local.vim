@@ -3,6 +3,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set colorcolumn=0
+if &term =~ 'rxvt-unicode-256color'
+ set notermguicolors
+ set t_Co=256
+endif
 
 " Theme
 let g:gruvbox_italic = 1

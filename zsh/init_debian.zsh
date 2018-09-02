@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 DISABLE_UPDATE_PROMPT=true
 
@@ -104,13 +104,21 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias :q='exit'
 alias diff='colordiff'
 alias make='make -j8'
 alias la='ls -a'
+alias lal='ls -al'
 alias upower='upower -d'
 alias apt='sudo apt'
 alias aptitude='sudo aptitude'
 alias open='xdg-open'
+# git
+alias gs='git status'
+alias gp='git push'
+alias gl='git pull'
+alias ga='git add'
+alias gc='git commit -m'
 # Debian alias
 alias ap='sudo aptitude'
 alias api='sudo aptitude install'
