@@ -4,5 +4,6 @@
 
 xset -b &
 /usr/bin/urxvtd -q -f -o &
+compton -b -d :0 &
 
 [[ -f ~/.Xresources  ]] && xrdb -merge -I$HOME ~/.Xresources

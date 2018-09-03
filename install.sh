@@ -9,7 +9,7 @@ if [ "$WHICH" == "vim" ]; then
 
 elif [ "$WHICH" == "zsh" ]; then 
   if [ "$LINUX_DISTRO" == "" ]; then
-    echo "Please select the linux distro"
+    echo "Please specify the linux distro"
   else
     $PWD/zsh/install.sh $LINUX_DISTRO
   fi
