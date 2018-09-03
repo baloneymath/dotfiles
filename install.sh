@@ -21,6 +21,10 @@ elif [ "$WHICH" == "urxvt" ]; then
   if [ -d $HOME/.Xresources.d ]; then
     rm -rf $HOME/.Xresources.d
   fi
+  if [ -d $HOME/.urxvt ]; then
+    rm -rf $HOME/.urxvt
+  fi
+  ln -sr -f $PWD/urxvt $HOME/.urxvt
   ln -sr -f $PWD/Xresources.d $HOME/.Xresources.d
   ln -sr -f $PWD/Xresources $HOME/.Xresources
   xrdb $HOME/.Xresources
