@@ -75,7 +75,7 @@ URxvt.matcher.button:   1
 !! resize-font
 
 !! keyboard-select
-URxvt.keysym.Escape:              perl:keyboard-select:activate
+URxvt.keysym.M-Escape:              perl:keyboard-select:activate
 URxvt.keyboard-select.clipboard:  true
 
 !------ enable vim keybindings ---------------------------------

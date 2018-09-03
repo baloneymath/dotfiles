@@ -5,17 +5,17 @@ LINUX_DISTRO=$2
 PWD=$HOME/dotfiles
 
 if [ "$WHICH" == "vim" ]; then
-  ./vim/install.sh
+  $PWD/vim/install.sh
 
 elif [ "$WHICH" == "zsh" ]; then 
   if [ "$LINUX_DISTRO" == "" ]; then
     echo "Please select the linux distro"
   else
-    ./zsh/install.sh $LINUX_DISTRO
+    $PWD/zsh/install.sh $LINUX_DISTRO
   fi
 
 elif [ "$WHICH" == "tmux" ]; then
-  ./tmux/install.sh
+  $PWD/tmux/install.sh
 
 elif [ "$WHICH" == "urxvt" ]; then
   if [ -d $HOME/.Xresources.d ]; then
@@ -36,15 +36,19 @@ elif [ "$WHICH" == "X11" ]; then
   ln -sr -f $PWD/X11/xprofile $HOME/.xprofile
 
 elif [ "$WHICH" == "ranger" ]; then
-  ./ranger/install.sh
+  $PWD/ranger/install.sh
+
+elif [ "$WHICH" == "rofi" ]; then
+  $PWD/rofi/install.sh
 
 elif [ "$WHICH" == "all" ]; then
-  ./install.sh X11
-  ./install.sh zsh $LINUX_DISTRO
-  ./install.sh vim
-  ./install.sh tmux
-  ./install.sh urxvt
-  ./install.sh ranger
+  $PWD/install.sh X11
+  $PWD/install.sh zsh $LINUX_DISTRO
+  $PWD/install.sh vim
+  $PWD/install.sh tmux
+  $PWD/install.sh urxvt
+  $PWD/install.sh ranger
+  $PWD/install.sh rofi
 fi
 
 
