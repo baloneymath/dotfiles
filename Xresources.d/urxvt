@@ -66,7 +66,7 @@ URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
 !------ Extensions -------------------------------
-URxvt.perl-ext-common:  default,matcher,resize-font
+URxvt.perl-ext-common:  default,matcher,resize-font,keyboard-select
 
 !! matcher
 URxvt.url-launcher:     /usr/bin/xdg-open
@@ -74,6 +74,9 @@ URxvt.matcher.button:   1
 
 !! resize-font
 
+!! keyboard-select
+URxvt.keysym.Escape:              perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard:  true
 
 !------ enable vim keybindings ---------------------------------
 ! emulate XTerm for proper recognition of key combinations in Vim
