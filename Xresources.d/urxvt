@@ -2,27 +2,53 @@
 !                URxvt Settings                !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-URxvt.color0:      #33303b
-URxvt.color1:      #ff5c57
-URxvt.color2:      #5af78e
-URxvt.color3:      #f3f99d
-URxvt.color4:      #57c7ff
-URxvt.color5:      #ff6ac1
-URxvt.color6:      #9aedfe
-URxvt.color7:      #eff0eb
-URxvt.color8:      #4f4b58
-URxvt.color9:      #ff5c57
-URxvt.color10:     #5af78e
-URxvt.color11:     #f3f99d
-URxvt.color12:     #57c7ff
-URxvt.color13:     #ff6ac1
-URxvt.color14:     #9aedfe
-URxvt.color15:     #eff0eb
+!------ Colors ----------------------------------
 
-URxvt.background:   [90]#282a36
-URxvt.foreground:   #eff0eb
-URxvt.cursorColor:  #9aedfe
+!! My
+!URxvt.background:  [90]#282a36
+!URxvt.foreground:  #eff0eb
+!URxvt.cursorColor: #9aedfe
+!URxvt.colorUL:     #4682B4
+!URxvt.color0:      #33303b
+!URxvt.color1:      #ff5c57
+!URxvt.color2:      #5af78e
+!URxvt.color3:      #f3f99d
+!URxvt.color4:      #57c7ff
+!URxvt.color5:      #ff6ac1
+!URxvt.color6:      #9aedfe
+!URxvt.color7:      #eff0eb
+!URxvt.color8:      #4f4b58
+!URxvt.color9:      #ff5c57
+!URxvt.color10:     #5af78e
+!URxvt.color11:     #f3f99d
+!URxvt.color12:     #57c7ff
+!URxvt.color13:     #ff6ac1
+!URxvt.color14:     #9aedfe
+!URxvt.color15:     #eff0eb
 
+!! gruvbox
+! hard: #1d2021 medium: #282828 soft #32302f
+URxvt.background:  [90]#282828
+URxvt.foreground:  #ebdbb2
+URxvt.colorUL:     #458588
+URxvt.color0:      #282828
+URxvt.color1:      #cc241d
+URxvt.color2:      #98971a
+URxvt.color3:      #d79921
+URxvt.color4:      #458588
+URxvt.color5:      #b16286
+URxvt.color6:      #689d6a
+URxvt.color7:      #a89984
+URxvt.color8:      #928374
+URxvt.color9:      #fb4934
+URxvt.color10:     #b8bb26
+URxvt.color11:     #fabd2f
+URxvt.color12:     #83a598
+URxvt.color13:     #d3869b
+URxvt.color14:     #8ec07c
+URxvt.color15:     #ebdbb2
+
+!------ Basics ---------------------------------
 URxvt.intensityStyles: false
 URxvt.font:            xft:hack:size=12
 URxvt.scrollBar:       false
@@ -32,7 +58,6 @@ URxvt.depth:           32
 URxvt.urgentOnBell:    false
 URxvt.visualBell:      false
 !URxvt.borderLess:      true
-URxvt.colorUL:         #4682B4
 
 URxvt.iso14755:     false
 URxvt.iso14755_52:  false
@@ -42,16 +67,10 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
 !------ Extensions -------------------------------
 URxvt.perl-ext-common:  default,matcher,resize-font
-!URxvt.perl-ext-common:  default,matcher,url-select
 
 !! matcher
 URxvt.url-launcher:     /usr/bin/xdg-open
 URxvt.matcher.button:   1
-
-!! url-select
-!URxvt.keysym.M-u:           perl:url-select:select_next
-!URxvt.url-select.launcher:  /usr/bin/xdg-open
-!URxvt.url-select.underline: true
 
 !! resize-font
 

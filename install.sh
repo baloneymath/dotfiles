@@ -35,12 +35,16 @@ elif [ "$WHICH" == "X11" ]; then
   ln -sr -f $PWD/X11/xsessionrc $HOME/.xsessionrc
   ln -sr -f $PWD/X11/xprofile $HOME/.xprofile
 
+elif [ "$WHICH" == "ranger" ]; then
+  ./ranger/install.sh
+
 elif [ "$WHICH" == "all" ]; then
   ./install.sh X11
   ./install.sh zsh $LINUX_DISTRO
   ./install.sh vim
   ./install.sh tmux
   ./install.sh urxvt
+  ./install.sh ranger
 fi
 
 
