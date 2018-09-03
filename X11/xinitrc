@@ -4,3 +4,5 @@
 
 xset -b &
 /usr/bin/urxvtd -q -f -o &
+
+[[ -f ~/.Xresources  ]] && xrdb -merge -I$HOME ~/.Xresources
