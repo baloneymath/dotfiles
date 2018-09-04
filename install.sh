@@ -36,10 +36,19 @@ elif [ "$WHICH" == "X11" ]; then
   ln -sr -f $PWD/X11/xprofile $HOME/.xprofile
 
 elif [ "$WHICH" == "ranger" ]; then
-  $PWD/ranger/install.sh
+  if [ -d $HOME/.config/ranger ]; then
+    rm -rf  $HOME/.config/ranger
+  fi
+  if [ ! -d $HOME/.Trash ]; then
+    mkdir $HOME/.Trash
+  fi
+  ln -sr -f $PWD/ranger $HOME/.config/ranger
 
 elif [ "$WHICH" == "rofi" ]; then
-  $PWD/rofi/install.sh
+  if [ -d $HOME/.config/rofi ]; then
+    rm -rf $HOME/.config/rofi
+  fi
+  ln -sr -f $PWD/rofi $HOME/.config/rofi
 
 elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh X11

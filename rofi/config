@@ -1,30 +1,28 @@
 !----- Colors ----------------------------
 !! gruvbox color
 rofi.color-enabled: true
-!                  				bg       				border   			separator
+!                         bg              border        separator
 rofi.color-window: argb: dd32302f, argb: dda89984, argb: dda89984
-!                  				bg       				fg       			bg-alt   				hl-bg    				hl-fg
+!                         bg              fg            bg-alt          hl-bg           hl-fg
 rofi.color-normal: argb: dd32302f, argb: ddebdbb2, argb: dd3c3836, argb: dd665c54, argb: ddfbf1c7
 rofi.color-active: argb: ddd79921, argb: dd32302f, argb: ddd79921, argb: ddfabd2f, argb: dd32302f
 rofi.color-urgent: argb: ddcc241d, argb: dd32302f, argb: ddcc241d, argb: ddfb4934, argb: dd32302f
  
-!----- Settings ---------------------------
-rofi.modi:      run,ssh,window
-rofi.font:      Hack 12
-rofi.terminal:  urxvt
-rofi.bw:        1
-rofi.width:     50
-rofi.columns:   1
-rofi.lines:     15
+ !----- Settings ---------------------------
+ rofi.modi:      run,ssh,window
+ rofi.font:      Hack 12
+ rofi.terminal:  urxvt
+ rofi.bw:        1
+ rofi.width:     50
+ rofi.columns:   1
+ rofi.lines:     15
 
-rofi.separator-style:  solid
-rofi.sidebar-mode:     true
-rofi.fixed-num-lines:  true
+ rofi.separator-style:  solid
+ rofi.sidebar-mode:     true
+ rofi.fixed-num-lines:  true
 
-rofi.kb-mode-next:     Control-Right
-rofi.kb-mode-previous: Control-Left
+ rofi.kb-mode-next:     Control-Right
+ rofi.kb-mode-previous: Control-Left
 
-rofi.ssh-client: ssh
-rofi.ssh-command: {terminal} -e {ssh-client} -Y {host}
-
-
+ rofi.ssh-client: ssh
+ rofi.ssh-command: {terminal} -e {ssh-client} -Y {host}

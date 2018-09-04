@@ -132,5 +132,13 @@ alias dpi='sudo dpkg -i'
 # kvm
 alias virsh='virsh -c qemu:///system'
 alias virt-viewer='virt-viewer -c qemu:///system'
-
+# ranger
+ranger() {
+    if [ -z "$RANGER_LEVEL" ]; then
+        /usr/bin/ranger "$@"
+    else
+        exit
+    fi
+}
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
