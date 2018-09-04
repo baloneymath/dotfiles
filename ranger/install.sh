@@ -2,6 +2,10 @@
 
 PWD=$HOME/dotfiles/ranger
 
-if [ -d $HOME/.config ]; then
+if [ ! -d $HOME/.config/ranger ]; then
+  ranger --copy-config=all
+fi
+
+if [ -d $HOME/.config/ranger ]; then
   ln -sr -f $PWD/rc.conf $HOME/.config/ranger/rc.conf
 fi
