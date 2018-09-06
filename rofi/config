@@ -11,7 +11,7 @@ rofi.color-urgent: argb:ddcc241d, argb:dd32302f, argb:ddcc241d, argb:ddfb4934, a
  !----- Settings ---------------------------
  rofi.modi:      run,ssh,window
  rofi.font:      Hack 12
- rofi.terminal:  urxvt
+ rofi.terminal:  urxvtc
  rofi.bw:        1
  rofi.width:     50
  rofi.columns:   1
