@@ -50,6 +50,9 @@ elif [ "$WHICH" == "rofi" ]; then
   fi
   ln -sr -f $PWD/rofi $HOME/.config/rofi
 
+elif [ "$WHICH" == "compton" ]; then
+  ln -sr -f $PWD/compton/compton.conf $HOME/.config/compton.conf
+
 elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh X11
   $PWD/install.sh zsh $LINUX_DISTRO
@@ -58,6 +61,7 @@ elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh urxvt
   $PWD/install.sh ranger
   $PWD/install.sh rofi
+  $PWD/install.sh comtpon
 fi
 
 
