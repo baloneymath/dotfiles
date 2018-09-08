@@ -61,7 +61,7 @@ elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh urxvt
   $PWD/install.sh ranger
   $PWD/install.sh rofi
-  $PWD/install.sh comtpon
+  $PWD/install.sh compton
 fi
 
 
