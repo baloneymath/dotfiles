@@ -23,6 +23,10 @@ URxvt.urgentOnBell:    false
 URxvt.visualBell:      false
 !URxvt.borderLess:      true
 
+URxvt.scrollTtyOutput:    false
+URxvt.scrollWithBuffer:   true
+URxvt.scrollTtyKeypress:  true
+
 URxvt.iso14755:     false
 URxvt.iso14755_52:  false
 
