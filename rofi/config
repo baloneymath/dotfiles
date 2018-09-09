@@ -9,7 +9,7 @@ rofi.color-active: argb:ddd79921, argb:dd32302f, argb:ddd79921, argb:ddfabd2f, a
 rofi.color-urgent: argb:ddcc241d, argb:dd32302f, argb:ddcc241d, argb:ddfb4934, argb:dd32302f
  
  !----- Settings ---------------------------
- rofi.modi:      run,ssh,window
+ rofi.modi:      drun,run,ssh,window
  rofi.font:      Hack 12
  rofi.terminal:  urxvtc
  rofi.bw:        1
