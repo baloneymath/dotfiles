@@ -53,6 +53,10 @@ elif [ "$WHICH" == "rofi" ]; then
 elif [ "$WHICH" == "compton" ]; then
   ln -sr -f $PWD/compton/compton.conf $HOME/.config/compton.conf
 
+elif [ "$WHICH" == "polybar" ]; then
+  ln -sr -f $PWD/polybar/config $HOME/.config/polybar/config
+  ln -sr -f $PWD/polybar/launch.sh $HOME/.config/polybar/launch.sh
+
 elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh X11
   $PWD/install.sh zsh $LINUX_DISTRO
@@ -62,6 +66,7 @@ elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh ranger
   $PWD/install.sh rofi
   $PWD/install.sh compton
+  $PWD/install.sh polybar
 fi
 
 
