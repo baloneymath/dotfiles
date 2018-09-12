@@ -7,5 +7,6 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar
-polybar yoda -r &
+MONITOR=eDP1 polybar yoda -r &
+MONITOR=DP1 polybar yoda -r &
 
