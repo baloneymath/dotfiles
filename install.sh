@@ -58,8 +58,10 @@ elif [ "$WHICH" == "polybar" ]; then
   ln -sr -f $PWD/polybar/launch.sh $HOME/.config/polybar/launch.sh
 
 elif [ "$WHICH" == "i3" ]; then
-  ln -sr -f $PWD/i3/config $HOME/.config/i3/config
-  ln -sr -f $PWD/i3/i3-exit.py $HOME/.config/i3/i3-exit.py
+  if [ -d $HOME/.config/i3 ]; then
+    rm -rf $HOME/.config/i3
+  fi
+  ln -sr -f $PWD/i3 $HOME/.config/i3
 
 elif [ "$WHICH" == "all" ]; then
   $PWD/install.sh X11
