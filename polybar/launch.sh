@@ -9,4 +9,5 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch bar
 MONITOR=eDP1 polybar yoda -r &
 MONITOR=DP1 polybar yoda -r &
+MONITOR=HDMI-0 polybar yoda -r &
 

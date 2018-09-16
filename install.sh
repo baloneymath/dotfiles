@@ -54,8 +54,10 @@ elif [ "$WHICH" == "compton" ]; then
   ln -sr -f $PWD/compton/compton.conf $HOME/.config/compton.conf
 
 elif [ "$WHICH" == "polybar" ]; then
-  ln -sr -f $PWD/polybar/config $HOME/.config/polybar/config
-  ln -sr -f $PWD/polybar/launch.sh $HOME/.config/polybar/launch.sh
+  if [ -d $HOME/.config/polybar ]; then
+    rm -rf $HOME/.config/polybar
+  fi
+  ln -sr -f $PWD/polybar $HOME/.config/polybar
 
 elif [ "$WHICH" == "i3" ]; then
   if [ -d $HOME/.config/i3 ]; then
