@@ -53,7 +53,7 @@ vim.opt.showmode = false
 vim.opt.breakindent = true
 
 -- Always show tabs.
-vim.opt.showtabline = 0
+vim.opt.showtabline = 1
 
 -- Force all horizontal splits to go below current window.
 vim.opt.splitbelow = true

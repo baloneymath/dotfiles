@@ -23,8 +23,10 @@ vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
 
 -- Move text up and down easily.
-vim.keymap.set("v", "<S-j>", ":m '>+1<cr>gv=gv", { desc = "Move down", noremap = true, silent = true })
-vim.keymap.set("v", "<S-k>", ":m '<-2<cr>gv=gv", { desc = "Move up", noremap = true, silent = true })
+vim.keymap.set("v", "<C-j>", ":m '>+1<cr>gv=gv", { desc = "Move down", noremap = true, silent = true })
+vim.keymap.set("v", "<C-k>", ":m '<-2<cr>gv=gv", { desc = "Move up", noremap = true, silent = true })
+vim.keymap.set("n", "<C-j>", ":m+<cr>", { desc = "Move down", noremap = true, silent = true})
+vim.keymap.set("n", "<C-k>", ":m-2<cr>", { desc = "Move up", noremap = true, silent = true})
 
 -- Search word under cursor but stay on the current word.
 vim.keymap.set("n", "gw", "*N", { desc = "Search word under cursor", noremap = true, silent = true })
@@ -37,10 +39,10 @@ vim.keymap.set("n", "[q", ":cprev<cr>", { desc = "Go to previous [q]uickfix", no
 --  Use CTRL+<hjkl> to switch between windows
 --
 --  See `:help wincmd` for a list of all window commands
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+vim.keymap.set("n", "<C-left>", "<C-w><C-h>", { desc = "Move focus to the left window" })
+vim.keymap.set("n", "<C-right>", "<C-w><C-l>", { desc = "Move focus to the right window" })
+vim.keymap.set("n", "<C-down>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
+vim.keymap.set("n", "<C-up>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- Diagnostics.
 vim.keymap.set(
@@ -61,3 +63,13 @@ vim.keymap.set(
 	vim.diagnostic.goto_prev,
 	{ desc = "Go to previous [d]iagnostics", noremap = true, silent = true }
 )
+
+-- Tabs
+vim.keymap.set("n", "<leader>1", ":tabmove 1<cr>", { desc = "Move to tab 1", noremap = true, silent = true})
+vim.keymap.set("n", "<leader>2", ":tabmove 2<cr>", { desc = "Move to tab 2", noremap = true, silent = true})
+vim.keymap.set("n", "<leader>3", ":tabmove 3<cr>", { desc = "Move to tab 3", noremap = true, silent = true})
+vim.keymap.set("n", "<leader>4", ":tabmove 4<cr>", { desc = "Move to tab 4", noremap = true, silent = true})
+vim.keymap.set("n", "<leader>5", ":tabmove 5<cr>", { desc = "Move to tab 5", noremap = true, silent = true})
+vim.keymap.set("n", "<leader>n", ":tabn<cr>", { desc = "Move to next tab", noremap = true, silent = true})
+vim.keymap.set("n", "<leader>N", ":tabp<cr>", { desc = "Move to previous tab", noremap = true, silent = true})
+
