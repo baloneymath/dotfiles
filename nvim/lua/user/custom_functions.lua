@@ -210,6 +210,18 @@ vim.keymap.set(
 	'<cmd>lua require("user.custom_functions").ToggleWrap()<cr>',
 	{ desc = "[T]oggle [w]rap", noremap = true, silent = true }
 )
+vim.keymap.set(
+	"n",
+	"<F3>",
+	'<cmd>lua require("user.custom_functions").ToggleWrap()<cr>',
+	{ desc = "[T]oggle [w]rap", noremap = true, silent = true }
+)
+vim.keymap.set(
+	"i",
+	"<F3>",
+	'<cmd>lua require("user.custom_functions").ToggleWrap()<cr>',
+	{ desc = "[T]oggle [w]rap", noremap = true, silent = true }
+)
 
 vim.keymap.set(
 	"n",
