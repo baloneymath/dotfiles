@@ -9,12 +9,10 @@ if vim.fn.has("wsl") == 1 or vim.fn.has("mac") == 1 then
 					lsp_fallback = true,
 				},
 				formatters_by_ft = {
-					lua = {
-						"stylua",
-					},
-					go = {
-						"goimports",
-					},
+					lua = { "stylua" },
+					go = { "goimports" },
+					cpp = { "clang-format" },
+					proto = { "clang-format" },
 					-- Conform can also run multiple formatters sequentially
 					python = { "isort", "black" },
 					--
