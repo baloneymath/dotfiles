@@ -11,7 +11,7 @@ return {
 
 			-- Allow autocompletion from LSPs.
 			"hrsh7th/cmp-nvim-lsp",
-			{ "simrat39/rust-tools.nvim", enabled = vim.fn.has("mac") == 1 },
+			{ "simrat39/rust-tools.nvim", enabled = vim.fn.has("wsl") == 1 or vim.fn.has("mac") == 1 },
 
 			-- Useful status updates for LSP.
 			-- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`.
@@ -143,7 +143,7 @@ return {
 				},
 				-- }}}
 			}
-			if vim.fn.has("mac") == 1 then
+			if vim.fn.has("wsl") == 1 or vim.fn.has("mac") == 1 then
 				vim.list_extend(servers, {
 					gopls = {},
 					rust_analyzer = {},
@@ -221,7 +221,7 @@ return {
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format lua code
 			})
-			if vim.fn.has("mac") == 1 then
+			if vim.fn.has("wsl") == 1 or vim.fn.has("mac") then
 				vim.list_extend(ensure_installed, {
 					"goimports", -- Used to automatically import packages for golang.
 				})

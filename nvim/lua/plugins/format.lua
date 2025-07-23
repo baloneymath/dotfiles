@@ -1,4 +1,4 @@
-if vim.fn.has("mac") == 1 then
+if vim.fn.has("wsl") == 1 or vim.fn.has("mac") == 1 then
 	return {
 		{
 			"stevearc/conform.nvim",
