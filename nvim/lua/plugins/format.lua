@@ -16,7 +16,7 @@ if vim.fn.has("wsl") == 1 or vim.fn.has("mac") == 1 then
 						"goimports",
 					},
 					-- Conform can also run multiple formatters sequentially
-					-- python = { "isort", "black" },
+					python = { "isort", "black" },
 					--
 					-- You can use a sub-list to tell conform to run *until* a formatter
 					-- is found.
